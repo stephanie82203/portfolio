@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheng's Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Oswald', 'sans-serif'], serif: ['Merriweather', 'serif'] },
+                    colors: {
+                        mignola: {
+                            black: '#0c0c0d', charcoal: '#1a1a1c', gray: '#2e2e33',
+                            cream: '#f2edd9', red: '#990000', brightRed: '#d60000',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="bg-mignola-black text-mignola-cream font-serif p-16">
+
+    <div class="max-w-4xl mx-auto">
+        <div class="mb-10 flex flex-wrap gap-4 items-center justify-between">
+            <a href="../index.html" class="mignola-border bg-mignola-charcoal hover:bg-mignola-red text-mignola-cream font-sans font-bold tracking-wider uppercase px-4 py-2 mignola-shadow-sm transition-colors text-xs flex items-center gap-2 decoration-none">
+                ◀ RETURN TO HOME
+            </a>
+            
+            <a href="Stephanie_Resume.pdf" download="Stephanie_Resume.pdf" class="mignola-border bg-mignola-brightRed hover:bg-mignola-cream hover:text-black text-white font-sans font-bold tracking-wider uppercase px-4 py-2 mignola-shadow-sm transition-colors text-xs flex items-center gap-2">
+                📥 DOWNLOAD (PDF)
+            </a>
+        </div>
+
+        <div class="mignola-border bg-[#e8e2cf] text-black p-8 md:p-12 mignola-shadow-cream font-serif relative">
+            <div class="text-center border-b-4 border-black pb-8 mb-8">
+                <h1 class="font-sans font-bold text-5xl tracking-tight uppercase mb-2">STEPHANIE CHENG</h1>
+                <p class="font-sans text-xs tracking-widest uppercase font-bold text-mignola-red">
+                    ONTARIO, CA | stephaniecheng.ckh@gmail.com | www.linkedin.com/in/stephanie822 | www.github.com/stephanie82203
+                </p>
+            </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+                    <div class="md:col-span-4 border-r-2 border-black/20 pr-4 space-y-8 font-sans text-xs">
+                        <div>
+                            <h3 class="font-bold text-sm tracking-wider uppercase border-b-2 border-black pb-1 text-mignola-red mb-3">DATA MODELING & DATABASES</h3>
+                            <ul class="space-y-1 tracking-wide font-medium uppercase text-black/80">
+                                <li>• Postgre SQL</li>
+                                <li>• Excel</li>
+                                <li>• Power BI</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-sm tracking-wider uppercase border-b-2 border-black pb-1 text-mignola-red mb-3">PROGRAMMING</h3>
+                            <ul class="space-y-1 tracking-wide font-medium uppercase text-black/80">
+                                <li>• Python</li>
+                                <li>• R</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-sm tracking-wider uppercase border-b-2 border-black pb-1 text-mignola-red mb-3">SOFTWARE & TOOLS</h3>
+                            <ul class="space-y-1 tracking-wide font-medium uppercase text-black/80">
+                                <li>• Git & GitHub</li>
+                                <li>• Microsoft Power Automate</li>
+                                <li>• Jupyter Notebook</li>
+                                <li>• VS Code</li>
+                                <li>• Microsoft Office</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-sm tracking-wider uppercase border-b-2 border-black pb-1 text-mignola-red mb-3">EDUCATION</h3>
+                            <p class="font-bold uppercase">CARLETON UNIVERSITY</p>
+                            <p class="text-[10px] text-black/60 italic">B.M. IN STATISTICS</p>
+                            <p class="text-[10px] text-black/60 italic">MINOR IN ECONOMICS</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-sm tracking-wider uppercase border-b-2 border-black pb-1 text-mignola-red mb-3">INTEREST</h3>
+                            <p class="font-bold"><S></S>SNOWBOARDING</p>
+                            <p class="font-bold mt-1">MUSIC INSTRUMENTS</p>
+                            <p class="font-bold mt-1">COLLECTING POSTCARDS</p>
+                        </div>
+                    </div>
+
+                    <div class="md:col-span-8 space-y-8 text-sm">
+                        
+                        <div>
+                            <h3 class="font-sans font-bold text-lg tracking-wider uppercase border-b-2 border-black pb-1 text-mignola-red mb-4">WORK EXPERIENCE</h3>
+                            
+                            <div class="space-y-6">
+                                <div>
+                                    <div class="flex justify-between items-baseline font-sans">
+                                        <span class="font-bold uppercase text-black">Census Helpline Operator, Statistics Canada</span>
+                                        <span class="text-xs text-black/60">APR 2026 - PRESENT</span>
+                                    </div>
+                                    <p class="font-sans font-bold text-xs uppercase text-mignola-red italic">Contract Full-time | Ottawa, ON</p>
+                                    <ul class="list-disc list-inside space-y-2 mt-2 leading-relaxed text-black/90">
+                                        <li>Built an automated FAQ tracking system using Microsoft Lists and Power Automate that logged group-chat questions to a central database and auto-notified users once answers were published</li>
+                                        <li>Configured Power Automate workflows to automate team administrative tasks, including scheduled break reminders</li>
+                                        <li>Resolved 1000+ inbound public inquiries, guiding respondents through census procedures and digital forms under strict operational protocols</li>
+                                        <li>Corrected data discrepancies across addresses, dwellings, and listings, updating internal databases while maintaining compliance with federal privacy legislation</li>
+                                        <li>Led daily team meetings to communicate updates, supervisor directives, and call metrics</li>
+                                        <li>Handled specialized outbound call-backs in Mandarin and Cantonese for respondents requiring language assistance</li>
+                                    </ul>
+                                </div>
+
+                                <!-- <div>
+                                    <div class="flex justify-between items-baseline font-sans">
+                                        <span class="font-bold uppercase text-black">NECRO CORP SOLUTIONS</span>
+                                        <span class="text-xs text-black/60">2022 - 2024</span>
+                                    </div>
+                                    <p class="font-sans font-bold text-xs uppercase text-mignola-red italic">SENIOR SYSTEM ENGINEER & DEVELOPER</p>
+                                    <ul class="list-disc list-inside space-y-2 mt-2 leading-relaxed text-black/90">
+                                        <li>Refactored UI states in modular React to synchronize with server output buffers, eradicating view freezes.</li>
+                                        <li>Devised custom testing profiles preventing code regression across legacy deployment branches by 65%.</li>
+                                        <li>Supervised data loading routines bridging internal clusters with remote external security logs.</li>
+                                    </ul>
+                                </div> -->
+                            </div>
+
+                        </div>
+
+                        <!-- <div>
+                            <h3 class="font-sans font-bold text-lg tracking-wider uppercase border-b-2 border-black pb-1 text-mignola-red mb-4">PROJECTS</h3>
+                            <p class="leading-relaxed text-black/80 italic">
+                                "I swear on absolute ownership of every ledger line I write. Code should compile perfectly under fire, schemas must remain clear, and architecture should exist to serve metrics that prove performance without question."
+                            </p>
+                        </div> -->
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
