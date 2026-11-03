@@ -39,7 +39,7 @@ const PROJECTS = {
       year: 2026,
       tools: ["HTML", "CSS","JavaScript"],
       summary: "The site you're on right now. Click to see details",
-      github: "https://github.com/stephanie82203/my-website",
+      github: "https://github.com/stephanie82203/portfolio",
     },
     {
       id: "resume-tool",
