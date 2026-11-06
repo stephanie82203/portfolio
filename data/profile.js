@@ -13,9 +13,9 @@ const PROFILE = {
   photoCaption: "Ontario · Open to Analyst Roles (Data, Business, Operations)",
 
   stats: [
-    { value: "4+ yrs", label: "in analytics" },
-    { value: "3", label: "dashboards shipped" },
-    { value: "2+", label: "reports automated" },
+    { value: "4+ yrs", label: "working with data" },
+    { value: "5+", label: "dashboards shipped" },
+    { value: "6+", label: "reports automated" },
   ],
 
   links: {

@@ -121,7 +121,7 @@
         </div>
         <div class="footer-bottom">
           <span>© ${new Date().getFullYear()} Stephanie CKH</span>
-          <a class="to-top" href="#top">Back to top ${icon("arrow-up")}</a>
+          <a class="to-top" href="#hero">Back to top ${icon("arrow-up")}</a>
         </div>
       </div>`;
   }
