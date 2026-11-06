@@ -28,7 +28,7 @@
   const chip = (text, strong = false) => `<li class="chip${strong ? " strong" : ""}">${esc(text)}</li>`;
   const chips = (main = [], other = [], label = "") =>
     `<ul class="chips"${label ? ` aria-label="${label}"` : ""}>${main.map((t) => chip(t, true)).join("")}${other.map((t) => chip(t)).join("")}</ul>`;
- 
+
   const blocks = (list = []) => list.map((b) => {
     if (typeof b === "string") return `<p>${b}</p>`;
     if (b.heading) return `<h3>${b.heading}</h3>`;
@@ -211,7 +211,7 @@
         } else {
           body = chips(s.main, s.other);
         }
-        
+
         const count = s.groups
           ? s.groups.reduce((n, g) => n + (g.main || []).length + (g.other || []).length, 0)
           : (s.main || []).length + (s.other || []).length;

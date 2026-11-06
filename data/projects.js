@@ -48,7 +48,7 @@ const PROJECTS = {
       year: 2026,
       summary: "An affordable and effective tool for creating a standout CV when job hunting.",
       tools: ["Python", "Claude API"],
-    
+
       report: {
         intro: "An affordable and effective tool for creating a standout CV when job hunting.",
         role: "Solo",
@@ -104,7 +104,7 @@ const PROJECTS = {
       summary: "Analyze New York City condominium sales data to predict condo prices based on property size. We also compare model performance across NYC's five boroughs (Manhattan, Brooklyn, Queens, The Bronx, and Staten Island), providing insights into real estate trends.",
       tools: ["R"],
       github: "https://github.com/stephanie82203/Stat4601-Final-Project/tree/main",
-    
+
       report: {
         role: "Group Project",
         sections: [

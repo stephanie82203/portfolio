@@ -25,7 +25,7 @@ const PROFILE = {
   },
 
   about: {
-    photo: "assets/about_selfPortrait.jpg",        
+    photo: "assets/about_selfPortrait.jpg",
     photoAlt: "Photo of Stephanie Cheng",
     paragraphs: [
       "The main audiences of this website are recruiters, people who share my interests, and myself. It contains basic resume information with detailed explanations, like what I learned from each work experience, why I picked my major, what I did between jobs, how I overcame my struggles, my future goals, and more.",

@@ -219,8 +219,6 @@
     }));
   }
 
-  $$("[data-year]").forEach((el) => { el.textContent = new Date().getFullYear(); });
-
   /* ---------- 8. Hero: floating data points ----------
      Points drift slowly and link up when they're close, like a network
      or a living scatter plot. They lean toward the cursor on desktop. */
@@ -231,9 +229,9 @@
     const LINK_DIST = 140;
     const MOUSE_DIST = 190;
     const colors = {
-      dot: "91, 63, 242",     
-      accent: "255, 106, 61", 
-      warm: "16, 179, 163",  
+      dot: "91, 63, 242",
+      accent: "255, 106, 61",
+      warm: "16, 179, 163",
       line: "91, 63, 242",
     };
     let w = 0, h = 0, dpr = 1, points = [], running = false, inView = true, rafId = 0;
@@ -447,7 +445,9 @@
 
       const t0 = performance.now();
       const frameGap = 1000 / SHIMMER.fps;
-      let last = 0, shRaf = 0;
+      let last = 0, shRaf = 0, lastScroll = -1e9;
+      // pause while the page is scrolling so scrolling stays smooth; the drift is too slow to notice the pause
+      window.addEventListener("scroll", () => { lastScroll = performance.now(); }, { passive: true });
       const render = (now) => {
         gl.clearColor(0, 0, 0, 0);
         gl.clear(gl.COLOR_BUFFER_BIT);
@@ -456,7 +456,7 @@
       };
       const tick = (now) => {
         shRaf = requestAnimationFrame(tick);
-        if (now - last < frameGap) return;
+        if (now - last < frameGap || now - lastScroll < 200) return;
         last = now;
         render(now);
       };
